@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((e,o)=>{"content"===e.from&&"showPageAction"===e.subject&&chrome.pageAction.show(o.tab.id)});
